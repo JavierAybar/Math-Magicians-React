@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+    'result result result result'
+    'number number number operator'
+    'number number number operator'
+    'number number number operator'
+    'number number number operator';
+  column-gap: 5px;
+}
+
+.btn {
+  width: 80px;
+  height: 34px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+}
+
+.btn-operator {
+  background: rgb(250 182 58);
+}
+
+.number {
+  display: grid;
+  grid-area: number;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.btn-zero {
+  grid-column: span 2;
+  display: flex;
+  width: 100%;
+  padding-top: 6px;
+  padding-left: 77px;
+}
+
+.operator {
+  display: grid;
+  grid-area: operator;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+}
+
+.result {
+  display: grid;
+  grid-area: result;
+  background: #222;
+  color: #fff;
+  height: 44px;
+  border-radius: 6px;
+  text-align: end;
+  padding-right: 10px;
+  padding-top: 13px;
+}
