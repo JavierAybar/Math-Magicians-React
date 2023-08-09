@@ -1,37 +1,26 @@
+import React, { useState } from 'react';
 import './Calculator.css';
+import Display from './Display';
+import ChildContent from './PanelButtons';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div className="calculator-container">
-    <ChildContent />
-  </div>
-);
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-const ChildContent = () => (
-  <div className="calculator">
-    <p className="result">0</p>
-    <section className="number">
-      <button className="btn" type="button">AC</button>
-      <button className="btn" type="button">+/-</button>
-      <button className="btn" type="button">%</button>
-      <button className="btn" type="button">7</button>
-      <button className="btn" type="button">8</button>
-      <button className="btn" type="button">9</button>
-      <button className="btn" type="button">4</button>
-      <button className="btn" type="button">5</button>
-      <button className="btn" type="button">6</button>
-      <button className="btn" type="button">1</button>
-      <button className="btn" type="button">2</button>
-      <button className="btn" type="button">3</button>
-      <button className="btn btn-zero" type="button">0</button>
-      <button className="btn" type="button">.</button>
-    </section>
-    <section className="operator">
-      <button className="btn btn-operator" type="button">÷</button>
-      <button className="btn btn-operator" type="button">X</button>
-      <button className="btn btn-operator" type="button">-</button>
-      <button className="btn btn-operator" type="button">+</button>
-      <button className="btn btn-operator" type="button">=</button>
-    </section>
-  </div>
-);
+  const handlerClick = (nameButton) => {
+    setState(calculate(state, nameButton));
+  };
+
+  return (
+    <div className="calculator-container">
+      <Display value={state.next || state.operation || state.total || '0'} />
+      <ChildContent clickHandler={handlerClick} />
+    </div>
+  );
+};
+
 export default Calculator;

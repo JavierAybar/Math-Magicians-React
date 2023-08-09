@@ -8,18 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
-}
-
-.calculator {
-  display: grid;
-  grid-template-areas:
-    'result result result result'
-    'number number number operator'
-    'number number number operator'
-    'number number number operator'
-    'number number number operator';
-  column-gap: 5px;
 }
 
 .btn {
@@ -29,14 +19,29 @@
   border-radius: 6px;
 }
 
+.btn.grey:hover {
+  background: #cacaca;
+}
+
+.btn.orange {
+  background: orange;
+}
+
+.btn.orange:hover {
+  background: #fc8c19;
+}
+
+.btn.wide {
+  width: 50%;
+}
+
 .btn-operator {
   background: rgb(250 182 58);
 }
 
-.number {
-  display: grid;
-  grid-area: number;
-  grid-template-columns: repeat(3, 1fr);
+.buttons-container {
+  display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 
@@ -48,21 +53,20 @@
   padding-left: 77px;
 }
 
-.operator {
-  display: grid;
-  grid-area: operator;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 5px;
-}
-
-.result {
-  display: grid;
+.display {
   grid-area: result;
-  background: #222;
+  background: #545454;
   color: #fff;
   height: 44px;
   border-radius: 6px;
   text-align: end;
   padding-right: 10px;
   padding-top: 13px;
+  width: 329px;
+  margin-bottom: 4px;
+}
+
+.container-rows {
+  display: flex;
+  gap: 3px;
 }
