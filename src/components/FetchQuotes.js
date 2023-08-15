@@ -9,7 +9,7 @@ const FetchQuotes = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const url = 'https://api.api-ninjas.com/v1/quotes?category=happiness';
+        const url = 'https://api.api-ninjas.com/v1/quotes?category=alone';
         const response = await fetch(url, {
           headers: {
             'X-Api-Key': 'pB33PTqHltghkmhwcxN9dw==XpkYpcTp7PCuAB1v',
@@ -34,7 +34,7 @@ const FetchQuotes = () => {
       <h2 className="title__quotes">Quotes</h2>
       <ul className="quotes">
         {data.map((item) => (
-          <div key={1}>
+          <div className="section-quotes" key={1}>
             <li>{item.quote}</li>
             <li>
               <strong>Autor:</strong>

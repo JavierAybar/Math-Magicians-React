@@ -1,0 +1,39 @@
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  font-family: math, sans-serif;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  padding: 10px;
+}
+
+.menu-title {
+  margin-left: 50px;
+  color: #479a47;
+  font-size: 2rem;
+  font-family: math, sans-serif;
+}
+
+.menu-links-container {
+  display: flex;
+  gap: 35px;
+  margin-right: 200px;
+  font-size: 1.1rem;
+}
+
+.activeLink {
+  color: #2acd2a;
+}
+
+.desactiveLink {
+  color: #0f8a3e;
+  text-decoration: none;
+}
