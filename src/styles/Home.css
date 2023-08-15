@@ -1,0 +1,30 @@
+.home-container-paragraphs {
+  border: 2px solid #222;
+  background: #2d2d2d;
+  color: #a3e4c5;
+  border-radius: 8px;
+  padding: 25px;
+  width: 900px;
+  margin-left: 50px;
+}
+
+.home-title {
+  font-size: 3rem;
+  width: 900px;
+  margin-left: 45px;
+  color: #2d2d2d;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 100px;
+  gap: 20px;
+}
+
+body {
+  background-color: #fff8c0;
+}
