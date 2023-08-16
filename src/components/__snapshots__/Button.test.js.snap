@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders as wide 1`] = `
+<button
+  class="btn   wide"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button component renders correctly 1`] = `
+<button
+  class="btn"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button component renders with grey style 1`] = `
+<button
+  class="btn  grey"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button component renders with orange style 1`] = `
+<button
+  class="btn orange"
+  type="button"
+>
+  Test
+</button>
+`;
