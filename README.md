@@ -66,24 +66,14 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- WALKTHROUGH
 
-## 🤯 Walk through video <a name="walk-through"></a>
-
-
-- [here](https://youtu.be/dYmqQRuvd4c)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
-
-<!-- LIVE DEMO
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://salimer.github.io/COMMENTDISH-project/dist/)
+- [Live Demo Link](https://math-magicians-react-gkab.onrender.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 
 <!-- GETTING STARTED -->
