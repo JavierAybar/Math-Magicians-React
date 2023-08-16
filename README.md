@@ -73,7 +73,7 @@
 
 - [Live Demo Link](https://math-magicians-react-gkab.onrender.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 
 <!-- GETTING STARTED -->
