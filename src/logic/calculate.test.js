@@ -1,4 +1,5 @@
 import calculate from './calculate';
+
 describe('calculate', () => {
   test('when buttonName is AC should return a obj with null values', () => {
     const obj = { total: '7', next: '2', operation: '+' };
