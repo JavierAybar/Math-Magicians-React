@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculate If there is an operation, update next 1`] = `
+Object {
+  "next": "21",
+  "operation": "+",
+  "total": "7",
+}
+`;
+
+exports[`calculate If there is no operation, update next and clear the value 1`] = `
+Object {
+  "next": "23",
+  "total": null,
+}
+`;
+
+exports[`calculate when buttonName is +/- and there are no values, return empty object 1`] = `Object {}`;
+
+exports[`calculate when buttonName is +/- and there is a total value, update total correctly 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "-7",
+}
+`;
+
+exports[`calculate when buttonName is . and next already contains ., no change should happen 1`] = `
+Object {
+  "next": "2.3",
+  "operation": null,
+  "total": null,
+}
+`;
+
+exports[`calculate when buttonName is = and there is a operation, return a obj updated with the total 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "11",
+}
+`;
+
+exports[`calculate when buttonName is = and there is no operation, return a empty obj 1`] = `Object {}`;
+
+exports[`calculate when buttonName is AC should return a obj with null values 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": null,
+}
+`;

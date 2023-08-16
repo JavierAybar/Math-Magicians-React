@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchQuotes component renders loading message 1`] = `
+<div>
+  <div
+    class="loading"
+  >
+    Loading...
+  </div>
+</div>
+`;

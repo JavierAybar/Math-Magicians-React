@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChildContent componen test matches snapshot 1`] = `
+<div>
+  <section
+    class="buttons-container"
+  >
+    <div
+      class="container-rows"
+    >
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        %
+      </button>
+      <button
+        class="btn orange"
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      class="container-rows"
+    >
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        7
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        8
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        9
+      </button>
+      <button
+        class="btn orange"
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      class="container-rows"
+    >
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        4
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        5
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        6
+      </button>
+      <button
+        class="btn orange"
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      class="container-rows"
+    >
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        3
+      </button>
+      <button
+        class="btn orange"
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      class="container-rows"
+    >
+      <button
+        class="btn  grey wide"
+        type="button"
+      >
+        0
+      </button>
+      <button
+        class="btn  grey"
+        type="button"
+      >
+        .
+      </button>
+      <button
+        class="btn orange"
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </section>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correct function of operations addittion of two numbers 1`] = `"4"`;
+
+exports[`correct function of operations division by zero 1`] = `"Can't divide by 0."`;
+
+exports[`correct function of operations division of two numbers 1`] = `"4"`;
+
+exports[`correct function of operations modulo of two numbers 1`] = `"1"`;
+
+exports[`correct function of operations modulo with divided by zero 1`] = `"Can't find modulo as can't divide by 0."`;
+
+exports[`correct function of operations multiplication of two numbers 1`] = `"20"`;
+
+exports[`correct function of operations substraction of two numbers 1`] = `"2"`;

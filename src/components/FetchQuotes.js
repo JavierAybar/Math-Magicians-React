@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const FetchQuotes = () => {
   const [data, setData] = useState([]);
@@ -18,7 +19,7 @@ const FetchQuotes = () => {
         const json = await response.json();
         setData(json);
       } catch (error) {
-        setError(true);
+        setError(error);
       }
       setIsLoading(false);
     };
@@ -33,11 +34,11 @@ const FetchQuotes = () => {
     <div className="container__quotes">
       <h2 className="title__quotes">Quotes</h2>
       <ul className="quotes">
-        {data.map((item) => (
-          <div className="section-quotes" key={1}>
+        {data.map((item, index) => (/* eslint-disable-next-line react/no-array-index-key */
+          <div className="section-quotes" key={uuidv4() + index}>
             <li>{item.quote}</li>
             <li>
-              <strong>Autor:</strong>
+              <strong>Author:</strong>
               {' '}
               {item.author}
             </li>
